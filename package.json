@@ -1,0 +1,31 @@
+{
+  "name": "keycodes-cli",
+  "description": "Key codes and names",
+  "version": "0.0.0",
+  "keywords": [
+    "key",
+    "code",
+    "keycode",
+    "cli"
+  ],
+  "repository": "andrepolischuk/keycodes-cli",
+  "dependencies": {
+    "keycodes": "^0.1.1",
+    "meow": "^3.3.0"
+  },
+  "devDependencies": {
+    "babel": "^5.5.6",
+    "mocha": "^2.2.5"
+  },
+  "bin": {
+    "keycodes": "cli.es5.js"
+  },
+  "scripts": {
+    "test": "mocha --require babel/register",
+    "transpile": "babel --stage 0 cli.js > cli.es5.js",
+    "prepublish": "npm run transpile",
+    "postpublish": "rm -rf *.es5.js"
+  },
+  "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
+  "license": "MIT"
+}
