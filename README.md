@@ -1,8 +1,6 @@
 # keycodes-cli
 
-  > Key codes and names
-
-  [keycodes][keycodes] - API for this module
+> Key codes and names
 
 ## Install
 
@@ -26,9 +24,16 @@ keycodes --help
     -n, --name  get key name
 ```
 
+## Related
+
+* [keycodes][keycodes] — API for this module
+* [keycomb][keycomb] — key combinations parser
+* [ks][ks] — keyboard shortcuts
 
 ## License
 
-  MIT
+MIT
 
 [keycodes]: https://github.com/andrepolischuk/keycodes
+[keycomb]: https://github.com/andrepolischuk/keycomb
+[ks]: https://github.com/andrepolischuk/ks
